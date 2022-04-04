@@ -1,0 +1,256 @@
+<script>
+//Detect IE5.5+
+version=0
+if (navigator.appVersion.indexOf("MSIE")!=-1){
+temp=navigator.appVersion.split("MSIE")
+version=parseFloat(temp[1])
+}
+
+if (version>=5.5) {//NON IE browser will return 0
+//alert("You're using IE5.5+")
+} else {
+//window.location.href="http://www.ukpayrollsystems2.com/download.php?which=IE";
+}
+</script>
+<script language="javascript" type="text/javascript" src="file:///C|/Documents and Settings/Dev03/Desktop/javascript/acrobat_detect.js">
+			<!--
+//			function getAcrobatVersion() { return null; };
+			//-->
+			</script>
+			
+			<script language="javascript" type="text/javascript">
+			<!--
+//			var requiredAcrobatVersion = 4;
+//			var acrobatVersion = getAcrobatVersion();
+			
+//			if (acrobatVersion >= requiredAcrobatVersion) {
+			//	alert('You have Acrobat ' + acrobatVersion + ' installed on the current browser.');
+//			}
+//			else if (acrobatVersion > 0) {
+//			window.location.href="http://www.ukpayrollsystems2.com/download.php?which=Acrobat";
+//			}
+//			else if (acrobatVersion == 0) {
+//			window.location.href="http://www.ukpayrollsystems2.com/download.php?which=Acrobat";
+//			}
+//			else if (acrobatVersion == acrobatVersion_DONTKNOW || acrobatVersion == null) {
+//				alert('This browser does not support Javascript-based Acrobat detection. Please ensure you have Acrobat ' + requiredAcrobatVersion + ' installed.');
+//			}
+			//-->
+			</script>
+<html>
+<head>
+	<title>Composite Company Manager Startup</title>
+
+    <style>
+body {
+     	scrollbar-face-color: #DEE3E7;
+	scrollbar-highlight-color: #FFFFFF;
+	scrollbar-shadow-color: #DEE3E7;
+	scrollbar-3dlight-color: #D1D7DC;
+	scrollbar-arrow-color: #006699;
+	scrollbar-track-color: #EFEFEF;
+	scrollbar-darkshadow-color: #98AAB1;
+	}
+.button_txt {
+     font-family: Verdana, Arial, Helvetica, sans-serif;
+     font-size: 12px;
+     font-weight: bold;
+     color: #FFFFFF
+}
+.message_txt {
+     font-family: Arial, Helvetica, sans-serif;
+     font-size: 10px;
+     color: #000000
+}
+
+
+.buttontangina {
+     position: relative;
+     height: 20;
+     font-family: Trebuchet MS;
+     font-size: 11px;
+     background-color: #EBEBEB;
+     border: 1 solid #000000;
+}
+
+.schemeDropDownBox{
+     border: 1px solid Silver;
+     font-family : Verdana, Geneva, Arial, Helvetica, sans-serif;
+     color : Black;
+}
+.schemeFont {
+     font-family : Verdana;
+     font-size : x-small;
+     color : Black;
+     font-weight : bold;
+}
+.statusBarFont{
+     font-family : Verdana, Geneva, Arial, Helvetica, sans-serif;
+     font-size : xx-small;
+     color : White;
+     font-weight : bold;
+}
+.defaultFont{
+     font-family : Verdana, Geneva, Arial, Helvetica, sans-serif;
+     font-size : xx-small;
+     color : Black;
+     font-weight : bold;
+}
+
+.schemeInputBox{
+     border: 1px solid Silver;
+
+}
+.schemeDataFont{
+     font-family : Verdana, Geneva, Arial, Helvetica, sans-serif;
+     font-size : 12px;
+     color : Black;
+
+}
+.schemeResult {
+     background-color : White;
+     font : Trebuchet MS;
+     font-size : 12px;
+     color : Black;
+     font-weight : bold;
+}
+.schemeExtra {
+     font-family: Trebuchet MS;
+     font-size: 11px;
+     background-color: #FFFFFF;
+     border: 1 solid #000000;
+}
+.schemeButton {
+     BORDER-RIGHT: #7f9db9 1px solid;
+	BORDER-TOP: #7f9db9 1px solid; 
+	FONT-WEIGHT: normal; 
+	FONT-SIZE: 10px; 
+	BORDER-LEFT: #7f9db9 1px solid; 
+	COLOR: black; 
+	BORDER-BOTTOM: #7f9db9 1px solid; 
+	FONT-FAMILY: Verdana, Arial, Helvetica,Georgia sans-serif; 
+	BACKGROUND-COLOR: #ffffff;
+}
+
+
+</style>
+<script Language="JavaScript">
+function loginform(theForm)
+{
+
+  if (theForm.username.value == "")
+  {
+    alert("Please enter a value for the \"Username\" field.");
+    theForm.username.focus();
+    return (false);
+  }
+
+  if (theForm.username.value.length < 3)
+  {
+    alert("Please enter at least 3 characters in the \"Username\" field.");
+    theForm.username.focus();
+    return (false);
+  }
+
+  if (theForm.username.value.length > 15)
+  {
+    alert("Please enter at most 15 characters in the \"Username\" field.");
+    theForm.username.focus();
+    return (false);
+  }
+
+  if (theForm.password.value == "")
+  {
+    alert("Please enter a value for the \"Password\" field.");
+    theForm.password.focus();
+    return (false);
+  }
+
+  if (theForm.password.value.length < 3)
+  {
+    alert("Please enter at least 3 characters in the \"Password\" field.");
+    theForm.password.focus();
+    return (false);
+  }
+
+  if (theForm.password.value.length > 15)
+  {
+    alert("Please enter at most 15 characters in the \"Password\" field.");
+    theForm.password.focus();
+    return (false);
+  }
+  return (true);
+}
+</script>
+</head>
+
+
+<body bgcolor="#FFFFFF">
+
+<table width='100%' height='100%' bgcolor="#CCCCCC">
+      
+    <td bgcolor="#FFFFFF"> 
+      <div align="center">
+    <form method="POST" action="{phpscript}" onsubmit="return loginform(this)" name="logform1" autocomplete="Off">
+          <table width="320" cellpadding="0" cellspacing="0">
+            <tr>
+              <td colspan="6" height="28"><div align="center"><font face="Trebuchet MS"><strong>UKPA</strong></font></div></td>
+            </tr>
+            <tr> 
+              <td colspan="6" height="2" bgcolor="#000000">
+                
+              </td>
+            </tr>
+            <tr> 
+              <td colspan="6" class="formtext">
+                <center>{error_out}</center>
+                <div align="right"> 
+                  <div align="left" class="formtext"><br>
+                    <br>
+                    <br>
+                  </div>
+                  <table width="350" border="0" cellspacing="0" cellpadding="0">
+                    <tr> 
+                      <td width="132"> 
+                        <div align="right" class="formtext"><font size="2" face="Verdana, Arial, Helvetica, sans-serif">USERNAME</font></div>
+                      </td>
+                      <td width="10">&nbsp;</td>
+                      <td width="105"> 
+                        <input name="username" type="text" class="schemeInputBox" style="font-family: Trebuchet MS; font-size: 11px" size="15">
+                      </td>
+                      <td width="105">&nbsp; </td>
+                    </tr>
+                    <tr> 
+                      <td width="132"> 
+                        <div align="right"> 
+                          <p class="formtext"><font size="2" face="Geneva, Arial, Helvetica, sans-serif">PASSWORD</font></p>
+                        </div>
+                      </td>
+                      <td width="10">&nbsp;</td>
+                      <td width="105"> 
+                        <input name="password" type="password" class="schemeInputBox" style="font-family: Trebuchet MS; font-size: 11px" size="15">
+                      </td>
+                      <td valign="bottom" width="105"> 
+                        <div align="center">
+                          <input name="Submit" type="submit" class="schemeButton" value="LOGIN">
+                        </div>
+                      </td>
+                    </tr>
+                  </table>
+                  <div align="center"><br>
+                    <br>
+                  </div>
+                </div>
+              </td>
+            </tr>
+          </table>
+          </form>
+		  
+        <font color="#CCCCCC" size="1" face="Verdana, Arial, Helvetica, sans-serif">VERSION 
+        1.0 </font></div>
+	</td>
+	</table>	  
+
+
+</body>
+</html>

@@ -1,0 +1,230 @@
+<html><head>
+<meta http-equiv="Content-Language" content="en-us">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>UKPA </title>
+<style>
+body {
+     SCROLLBAR-FACE-COLOR: white;
+     SCROLLBAR-HIGHLIGHT-COLOR: white;
+     SCROLLBAR-SHADOW-COLOR: white;
+     SCROLLBAR-3DLIGHT-COLOR: #cccccc;
+     SCROLLBAR-ARROW-COLOR: #666666;
+     SCROLLBAR-TRACK-COLOR: #ffffff;
+     SCROLLBAR-DARKSHADOW-COLOR: #cccccc;
+}
+.button_txt {
+     font-family: Verdana, Arial, Helvetica, sans-serif;
+     font-size: 12px;
+     font-weight: bold;
+     color: #FFFFFF
+}
+.message_txt {
+     font-family: Arial, Helvetica, sans-serif;
+     font-size: 10px;
+     color: #000000
+}
+
+
+.buttontangina {
+     position: relative;
+     height: 20;
+     font-family: Trebuchet MS;
+     font-size: 11px;
+     background-color: #EBEBEB;
+     border: 1 solid #000000;
+}
+
+
+.schemeDropDownBox{
+     border: 1px solid Silver;
+     font-family : Verdana, Geneva, Arial, Helvetica, sans-serif;
+     color : Black;
+}
+.schemeFont {
+     font-family : Verdana;
+     font-size : x-small;
+     color : Black;
+     font-weight : bold;
+}
+.statusBarFont{
+     font-family : Verdana, Geneva, Arial, Helvetica, sans-serif;
+     font-size : xx-small;
+     color : White;
+     font-weight : bold;
+}
+.defaultFont{
+     font-family : Verdana, Geneva, Arial, Helvetica, sans-serif;
+     font-size : xx-small;
+     color : Black;
+     font-weight : bold;
+}
+.defaultFont1{
+     font-family : Verdana, Geneva, Arial, Helvetica, sans-serif;
+     font-size : xx-small;
+     color : Black;
+    
+}
+.newSchemeFont {
+ 	 font-family: Trebuchet MS;
+     font-size: 11px;
+}
+.schemeButton {
+     BORDER-RIGHT: #7f9db9 1px solid;
+	BORDER-TOP: #7f9db9 1px solid; 
+	FONT-WEIGHT: normal; 
+	FONT-SIZE: 10px; 
+	BORDER-LEFT: #7f9db9 1px solid; 
+	COLOR: black; 
+	BORDER-BOTTOM: #7f9db9 1px solid; 
+	FONT-FAMILY: Verdana, Arial, Helvetica,Georgia sans-serif; 
+	BACKGROUND-COLOR: #ffffff;
+}
+/*
+.schemeInputBox{
+    BORDER-RIGHT: #7f9db9 1px solid;
+	BORDER-TOP: #7f9db9 1px solid; 
+	FONT-WEIGHT: normal; 
+	FONT-SIZE: 10px; 
+	BORDER-LEFT: #7f9db9 1px solid; 
+	COLOR: black; 
+	BORDER-BOTTOM: #7f9db9 1px solid; 
+	FONT-FAMILY: Verdana, Arial, Helvetica,Georgia sans-serif; 
+	BACKGROUND-COLOR: #ffffff;
+}
+*/
+.schemeDataFont{
+     font-family : Verdana, Geneva, Arial, Helvetica, sans-serif;
+     font-size : 12px;
+     color : Black;
+
+}
+.schemeResult {
+     background-color : White;
+     font : Trebuchet MS;
+     font-size : 12px;
+     color : Black;
+     font-weight : bold;
+}
+.schemeExtra {
+     font-family: Trebuchet MS;
+     font-size: 11px;
+     background-color: #FFFFFF;
+     border: 1 solid #000000;
+}
+
+.schemeInputBox{
+ /*	    border: 1px solid Silver; */
+	BORDER-RIGHT: #7f9db9 1px solid;
+	BORDER-TOP: #7f9db9 1px solid; 
+	FONT-WEIGHT: normal; 
+	FONT-SIZE: 10px; 
+	BORDER-LEFT: #7f9db9 1px solid; 
+	COLOR: black; 
+	BORDER-BOTTOM: #7f9db9 1px solid; 
+	FONT-FAMILY: Verdana, Arial, Helvetica,Georgia sans-serif; 
+	BACKGROUND-COLOR: #ffffff;
+
+}
+.schemeButton {
+     BORDER-RIGHT: #7f9db9 1px solid;
+	BORDER-TOP: #7f9db9 1px solid; 
+	FONT-WEIGHT: normal; 
+	FONT-SIZE: 10px; 
+	BORDER-LEFT: #7f9db9 1px solid; 
+	COLOR: black; 
+	BORDER-BOTTOM: #7f9db9 1px solid; 
+	FONT-FAMILY: Verdana, Arial, Helvetica,Georgia sans-serif; 
+	BACKGROUND-COLOR: #ffffff;
+}
+</style>
+<script Language="JavaScript">
+function loginform(theForm)
+{
+
+  if (theForm.username.value == "")
+  {
+    alert("Please enter a value for the \"Username\" field.");
+    theForm.username.focus();
+    return (false);
+  }
+
+  if (theForm.username.value.length < 3)
+  {
+    alert("Please enter at least 3 characters in the \"Username\" field.");
+    theForm.username.focus();
+    return (false);
+  }
+
+  if (theForm.username.value.length > 15)
+  {
+    alert("Please enter at most 15 characters in the \"Username\" field.");
+    theForm.username.focus();
+    return (false);
+  }
+
+  if (theForm.password.value == "")
+  {
+    alert("Please enter a value for the \"Password\" field.");
+    theForm.password.focus();
+    return (false);
+  }
+
+  if (theForm.password.value.length < 3)
+  {
+    alert("Please enter at least 3 characters in the \"Password\" field.");
+    theForm.password.focus();
+    return (false);
+  }
+
+  if (theForm.password.value.length > 15)
+  {
+    alert("Please enter at most 15 characters in the \"Password\" field.");
+    theForm.password.focus();
+    return (false);
+  }
+  return (true);
+}
+</script>
+</head>
+
+<body{something}>
+
+
+<table border="0" width="100%" style="position: relative; border: 1 solid #000000" height="100%" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="100%">
+    <form method="POST" action="{phpscript}" onsubmit="return loginform(this)" name="logform1" autocomplete="Off">
+        <p align="center"><font face="Trebuchet MS" size="2"></font></p>
+  <div align="center">
+    <center>
+    <table border="0" width="242" bgcolor="#FF9900" style="border: 1 solid #000000">
+      <tr>
+        <td width="245" colspan="2" align="center" bgcolor="#808080"><font face="Trebuchet MS" size="2" color="#FFFFFF"><b>USER LOGIN
+          </b></font></td>
+      </tr>
+      <tr>
+        <td align="center"><font face="Trebuchet MS" size="2">USERNAME</font></td>
+        <td align="center"><input name="username" type="text" class="schemeInputBox" style="font-family: Trebuchet MS; font-size: 11px" size="20" maxlength="15"></td>
+      </tr>
+      <tr>
+        <td align="center"><font face="Trebuchet MS" size="2">PASSWORD</font></td>
+        <td align="center"><input name="password" type="password" class="schemeInputBox" style="font-family: Trebuchet MS; font-size: 11px" size="20" maxlength="15"></td>
+      </tr>
+      <tr>
+        <td width="245" colspan="2">
+          <p align="center">
+                    <input type="submit" value="LOGIN" name="B1" style="font-family: Trebuchet MS; font-size: 11px; background-color: #FFFFFF; border: 1 solid #000000">
+                </td>
+      </tr>
+    </table>
+    </center>
+  </div>
+</form>
+</td>
+  </tr>
+</table>
+
+
+</body>
+
+</html>
